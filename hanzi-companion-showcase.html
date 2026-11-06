@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf7fa">
+  <title>Hanzi Companion — Daily Chinese Practice</title>
+  <style>
+    :root{color-scheme:light;--paper:#fbf7fa;--surface:#fff;--ink:#302737;--muted:#766b7b;--line:#eadfe9;--pink:#b94f83;--pink-soft:#f9eaf1;--purple:#7354a3;--purple-soft:#eee8f7;--plum:#563c70;--shadow:0 14px 38px rgba(87,57,95,.075);--radius:22px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.65 "Trebuchet MS","Segoe UI",sans-serif}.page{width:min(1100px,100%);margin:0 auto;padding:32px 28px 52px}.brand{display:flex;align-items:center;gap:11px;color:#735d78;font-size:10px;font-weight:800;letter-spacing:1.7px;text-transform:uppercase}.brand-mark{width:34px;height:34px;display:grid;place-items:center;border:1px solid #e9cfdf;border-radius:50%;background:var(--pink-soft);color:var(--pink);font:700 17px Georgia,serif}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;padding:52px 0 38px}.kicker{margin:0 0 12px;color:var(--pink);font-size:11px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase}.hero h1{max-width:650px;margin:0;font:500 clamp(38px,6vw,62px)/1.04 Georgia,"Times New Roman",serif;letter-spacing:-1.5px}.hero h1 em{color:var(--purple);font-weight:400}.hero-copy{max-width:610px;margin:20px 0 0;color:#675c6c;font-size:15px}.hero-copy .vi{display:block;margin-top:7px;color:#837688;font-size:14px}.actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:23px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 17px;border-radius:999px;text-decoration:none;font-size:12px;font-weight:700}.button.primary{background:var(--purple);color:#fff;box-shadow:0 7px 18px rgba(115,84,163,.2)}.button.primary:hover{background:#62448f}.button.secondary{border:1px solid #e1d3e2;color:#6b557f;background:#fff}.hero-art{min-height:320px;position:relative;display:grid;place-items:center}.orbit{position:absolute;width:280px;height:280px;border:1px solid #ead6e6;border-radius:50%}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #eee0ef;border-radius:50%;inset:24px}.orbit:after{inset:52px}.study-card{position:relative;z-index:1;width:245px;padding:22px 22px 20px;border:1px solid #eaddea;border-radius:25px;background:rgba(255,255,255,.92);box-shadow:0 20px 45px rgba(99,62,105,.12);transform:rotate(-3deg)}.study-top{display:flex;align-items:center;justify-content:space-between;color:#917f92;font-size:9px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase}.day-dot{width:8px;height:8px;border-radius:50%;background:#d983a9;box-shadow:0 0 0 5px #faedf3}.hanzi{margin:16px 0 0;color:var(--plum);font:500 76px/1 Georgia,serif;text-align:center}.pinyin{text-align:center;color:var(--pink);font:600 17px Georgia,serif;letter-spacing:.4px}.meaning{text-align:center;color:#827486;font-size:11px;margin-top:4px}.mini-rule{height:1px;background:#efe5ed;margin:17px 0 13px}.card-meta{display:flex;justify-content:space-between;color:#776982;font-size:10px}.bubble{position:absolute;right:4px;top:29px;z-index:2;padding:10px 13px;border-radius:14px 14px 4px 14px;background:var(--pink-soft);color:#9b4c79;font:600 12px Georgia,serif;box-shadow:0 5px 14px #7b426018}.bubble.two{right:auto;left:6px;top:auto;bottom:30px;border-radius:14px 14px 14px 4px;background:var(--purple-soft);color:#6e5395}.spark{position:absolute;color:#bf76a0;font-size:18px}.spark.one{top:37px;left:22%}.spark.two{right:17%;bottom:43px;font-size:14px}.one-liner{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;padding:19px 22px;border:1px solid #efd8e5;border-radius:16px;background:#fcf0f5}.pin{color:var(--pink);font-size:17px;line-height:1.4}.one-liner strong{display:block;color:#523f59;font:600 15px Georgia,serif}.one-liner p{margin:4px 0 0;color:#706275;font-size:13px}.one-liner .vi{display:block;margin-top:4px;color:#837487;font-size:12px}.section{margin-top:42px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:14px}.section-head h2{margin:0;color:var(--plum);font:500 27px Georgia,serif;letter-spacing:-.4px}.section-head p{margin:0;color:#867889;font-size:11px}.intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:14px}.panel{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);box-shadow:var(--shadow);padding:22px 24px}.panel h3{margin:0;color:#62496f;font:500 20px Georgia,serif}.panel h3 .vi-title{display:block;margin-top:3px;color:#98899a;font:500 12px "Trebuchet MS","Segoe UI",sans-serif}.panel p{margin:12px 0 0;color:#6d6272;font-size:13px}.panel .vi-copy{display:block;margin-top:6px;color:#86798a;font-size:12px}.capability-list{display:grid;grid-template-columns:1fr 1fr;gap:0 16px;margin:16px 0 0;padding:0;list-style:none}.capability-list li{padding:10px 0;border-top:1px solid #f0e9f0;color:#5d5264;font-size:12px}.capability-list b{display:block;color:#5c456b;font-size:12px}.capability-list span{display:block;margin-top:2px;color:#897d8d;font-size:11px}.workflow{display:grid;gap:0;margin-top:14px}.flow-row{display:grid;grid-template-columns:27px 1fr;gap:10px;align-items:start;padding:9px 0;border-top:1px solid #f1eaf1}.flow-num{width:24px;height:24px;display:grid;place-items:center;border-radius:50%;background:var(--purple-soft);color:var(--purple);font-size:10px;font-weight:800}.flow-row b{display:block;color:#5d4a68;font-size:12px}.flow-row span{display:block;color:#887b8d;font-size:11px}.compare{overflow:hidden;padding:0}.compare-head{padding:20px 22px 14px}.compare-head h3{margin:0;color:#62496f;font:500 20px Georgia,serif}.compare table{width:100%;border-collapse:collapse;table-layout:fixed}.compare th,.compare td{padding:13px 18px;border-top:1px solid #eee7ef;text-align:left;vertical-align:top}.compare th{color:#795a7f;background:#fbf7fb;font-size:10px;letter-spacing:.8px;text-transform:uppercase}.compare td{color:#675b6d;font-size:12px}.compare td:first-child{width:25%;color:#5e4b68;font-weight:700}.compare .agent-col{background:#fcf7fc}.compare-note{padding:11px 18px;border-top:1px solid #eee7ef;color:#8b7d8c;font-size:10px}.target-strip{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:14px;padding:17px 21px;border:1px solid #e6d8ec;border-radius:16px;background:#f4eff9}.target-strip b{display:block;color:#59476a;font:500 17px Georgia,serif}.target-strip span{display:block;margin-top:3px;color:#83758e;font-size:11px}.target-value{flex:none;color:var(--purple);font:600 24px Georgia,serif;white-space:nowrap}.boundary{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;margin-top:22px;padding:18px 21px;border:1px solid #eadfe9;border-radius:16px;background:#fff}.boundary h3{margin:0;color:#62496f;font:500 17px Georgia,serif}.boundary p{margin:5px 0 0;color:#75697a;font-size:11px}.boundary .vi-copy{display:block;margin-top:4px;color:#8b7e8f}.boundary-tag{max-width:230px;padding:10px 13px;border-radius:12px;background:#f9edf3;color:#92506f;font-size:10px;font-weight:700;text-align:center}.footer{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:20px;color:#928695;font-size:10px}.footer b{color:#786881}
+    @media(max-width:780px){.page{padding:23px 17px 38px}.hero{grid-template-columns:1fr;gap:8px;padding:38px 0 24px}.hero-art{min-height:280px}.study-card{width:225px}.intro-grid{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:5px}.boundary{grid-template-columns:1fr}.boundary-tag{max-width:none}.target-strip{align-items:flex-start;flex-direction:column;gap:8px}}
+    @media(max-width:520px){.hero h1{font-size:42px}.capability-list{grid-template-columns:1fr}.compare th,.compare td{padding:10px 9px;font-size:10px}.compare td:first-child{width:24%}.one-liner{padding:16px}.panel{padding:19px}.footer{display:block}.footer span{display:block;margin-top:5px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    @media print{body{background:#fff}.page{max-width:none;padding:12mm}.hero{padding-top:28px}.panel,.study-card,.one-liner,.target-strip,.boundary{box-shadow:none;break-inside:avoid}.actions{display:none}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="brand"><span class="brand-mark">学</span><span>YOUR DAILY CHINESE LEARNING COMPANION · BẠN ĐỒNG HÀNH HỌC TIẾNG TRUNG</span></header>
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <p class="kicker">Less guesswork. More steady practice. · Bớt học mò, luyện tập đều hơn.</p>
+        <h1 id="hero-title">Hanzi<br><em>Companion.</em></h1>
+        <p class="hero-copy">A thoughtful AI study partner for Chinese vocabulary, pronunciation, grammar, listening, and everyday speaking practice.<span class="vi">Trợ lý học tập đồng hành cùng bạn luyện từ vựng, phát âm, ngữ pháp, nghe và giao tiếp tiếng Trung mỗi ngày.</span></p>
+        <div class="actions"><a class="button primary" href="#example">See a practice card · Xem thẻ mẫu</a><a class="button secondary" href="#how-it-works">How it works · Cách hoạt động</a></div>
+      </div>
+      <div class="hero-art" aria-label="Chinese vocabulary sample card">
+        <div class="orbit"></div><span class="spark one" aria-hidden="true">✦</span><span class="spark two" aria-hidden="true">✧</span>
+        <div class="bubble">nǐ hǎo</div><div class="bubble two">你好 · xin chào</div>
+        <article class="study-card" id="example"><div class="study-top"><span>Today's practice · Bài hôm nay</span><i class="day-dot"></i></div><div class="hanzi">你好</div><div class="pinyin">nǐ hǎo</div><div class="meaning">Hello · Xin chào</div><div class="mini-rule"></div><div class="card-meta"><span>Hanzi · Pinyin · Tone</span><span>01 / 05</span></div></article>
+      </div>
+    </section>
+
+    <aside class="one-liner"><span class="pin" aria-hidden="true">✳</span><div><strong>In one sentence · Tóm gọn trong một câu</strong><p>It turns your goals, study time, and supplied materials into structured Chinese practice—with review based only on what you actually answer or confirm.</p><span class="vi">Trợ lý biến mục tiêu, thời gian học và tài liệu bạn cung cấp thành bài luyện tiếng Trung có cấu trúc; phần ôn tập chỉ dựa trên kết quả bạn thực sự trả lời hoặc xác nhận.</span></div></aside>
+
+    <section class="section" aria-labelledby="what-title">
+      <div class="section-head"><h2 id="what-title">A study partner, not a black box.<br><span lang="vi">Bạn đồng hành học tập, không phải “hộp đen”.</span></h2><p>Clear inputs → useful practice → honest progress · Đầu vào rõ → bài luyện thiết thực → tiến độ trung thực</p></div>
+      <div class="intro-grid">
+        <article class="panel">
+          <h3>What it is <span class="vi-title">Đây là gì?</span></h3>
+          <p>Hanzi Companion helps organize Chinese-learning requests into small lessons and practical exercises. Share a topic, word list, course note, or goal; receive a bilingual English–Vietnamese study response with Chinese characters and pinyin where useful.</p>
+          <span class="vi-copy">Hanzi Companion sắp xếp yêu cầu học tiếng Trung thành bài học ngắn và bài tập thực tế. Gửi chủ đề, danh sách từ, ghi chú khóa học hoặc mục tiêu; bạn sẽ nhận nội dung Anh–Việt, kèm chữ Hán và pinyin khi phù hợp.</span>
+          <ul class="capability-list">
+            <li><b>Vocabulary · Từ vựng</b><span>Hanzi, pinyin, tones, meanings, examples · chữ Hán, pinyin, thanh điệu, nghĩa, ví dụ</span></li>
+            <li><b>Grammar · Ngữ pháp</b><span>Patterns, examples, short exercises · mẫu câu, ví dụ, bài luyện ngắn</span></li>
+            <li><b>Listening · Nghe</b><span>Practice from supplied or available audio/text · luyện với audio/văn bản có sẵn</span></li>
+            <li><b>Speaking · Nói</b><span>Prompts and feedback on submitted answers · gợi ý và góp ý câu trả lời bạn gửi</span></li>
+          </ul>
+        </article>
+        <article class="panel" id="how-it-works">
+          <h3>How a session works <span class="vi-title">Một buổi học diễn ra thế nào?</span></h3>
+          <div class="workflow">
+            <div class="flow-row"><span class="flow-num">01</span><div><b>Share your goal and materials · Gửi mục tiêu và tài liệu</b><span>Topic, level, available time, or word list · chủ đề, trình độ, thời gian hoặc danh sách từ</span></div></div>
+            <div class="flow-row"><span class="flow-num">02</span><div><b>Choose the practice type · Chọn dạng bài luyện</b><span>Vocabulary, grammar, listening, speaking, or review · từ vựng, ngữ pháp, nghe, nói hoặc ôn tập</span></div></div>
+            <div class="flow-row"><span class="flow-num">03</span><div><b>Learn, try, and get feedback · Học, làm thử và nhận góp ý</b><span>Answers and progress are checked, not assumed · kiểm tra câu trả lời, không tự suy diễn tiến độ</span></div></div>
+            <div class="flow-row"><span class="flow-num">04</span><div><b>Keep a clear next step · Có bước tiếp theo rõ ràng</b><span>Review uncertain words or continue to a new topic · ôn từ chưa chắc hoặc học chủ đề mới</span></div></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="compare-title">
+      <div class="section-head"><h2 id="compare-title">From scattered study to a clear routine.<br><span lang="vi">Từ học rời rạc đến lộ trình rõ ràng.</span></h2><p>Qualitative comparison only · So sánh cách làm, không tự nhận số phút tiết kiệm</p></div>
+      <div class="panel compare">
+        <div class="compare-head"><h3>Before &amp; with the companion · Trước và khi có trợ lý</h3></div>
+        <table>
+          <thead><tr><th>Study task · Việc học</th><th>Before · Trước</th><th>With Hanzi Companion · Khi dùng trợ lý</th></tr></thead>
+          <tbody>
+            <tr><td>Prepare practice<br>Soạn bài luyện</td><td>Choose words and create examples yourself.<br>Tự chọn từ và nghĩ câu ví dụ.</td><td>Send a word list or topic; get a structured practice set.<br>Gửi danh sách từ hoặc chủ đề để nhận bài luyện có cấu trúc.</td></tr>
+            <tr><td>Review<br>Ôn tập</td><td>Decide what to revisit from memory or scattered notes.<br>Tự nhớ nội dung cần ôn hoặc tìm trong ghi chú.</td><td>Get a review list based on answers or progress you confirm.<br>Nhận danh sách ôn dựa trên câu trả lời hoặc tiến độ bạn xác nhận.</td></tr>
+            <tr><td>Check understanding<br>Kiểm tra mức hiểu</td><td>Practice without a consistent answer check.<br>Luyện tập nhưng thiếu bước kiểm tra nhất quán.</td><td>Use a short quiz, sample answer, and clear correction notes.<br>Làm câu hỏi ngắn, xem đáp án mẫu và nhận góp ý rõ ràng.</td></tr>
+          </tbody>
+        </table>
+        <div class="compare-note">No measured time-saving claim is included because no before/after timing data was provided. · Chưa có số liệu thời gian trước/sau nên trang này không tự đưa ra con số tiết kiệm.</div>
+      </div>
+    </section>
+
+    <aside class="target-strip"><div><b>Vocabulary target · Mục tiêu từ vựng</b><span>Shown as a target from the brief—not as completed progress. · Đây là mục tiêu trong đề bài, không phải tiến độ đã hoàn thành.</span></div><div class="target-value">450 / 600 words</div></aside>
+
+    <section class="boundary" aria-label="Limits and trust boundaries">
+      <div><h3>Helpful, with honest boundaries · Hữu ích và minh bạch giới hạn</h3><p>The Agent does not invent course requirements, deadlines, sources, or learning progress. Audio features, external tools, and Feishu storage depend on availability and explicit authorization; language feedback may need teacher review for nuance.</p><span class="vi-copy">Agent không tự tạo yêu cầu khóa học, hạn chót, nguồn hoặc tiến độ học. Tính năng audio, công cụ ngoài và lưu trữ Feishu phụ thuộc vào khả năng sẵn có và quyền được cấp rõ ràng; nội dung sắc thái khó có thể cần giáo viên xem lại.</span></div>
+      <div class="boundary-tag">No diagnosis · No guaranteed results<br>Không chẩn đoán · Không cam kết kết quả</div>
+    </section>
+    <footer class="footer"><span><b>Hanzi Companion</b> · A bilingual Chinese study concept · Ý tưởng trợ lý học tiếng Trung song ngữ</span><span>Demo page only · Trang giới thiệu mẫu; chưa kết nối API hoặc dữ liệu thật.</span></footer>
+  </main>
+</body>
+</html>
